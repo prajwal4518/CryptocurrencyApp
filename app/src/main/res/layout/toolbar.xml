@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    android:background="@color/colorPrimary"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+    <ImageButton
+        android:id="@+id/ib_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:paddingRight="5dp"
+        android:paddingLeft="-2dp"
+        app:srcCompat="@android:drawable/stat_notify_sync" />
+
+    <Spinner
+        android:id="@+id/s_cryptoSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_background" />
+
+</android.support.v7.widget.Toolbar>

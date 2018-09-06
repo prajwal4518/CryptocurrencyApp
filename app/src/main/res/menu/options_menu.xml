@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/set_preload"
+        android:title="Set Preload"/>
+    <item
+        android:id="@+id/set_domestic"
+        android:title="Set Domestic Currenecy"/>
+
+</menu>

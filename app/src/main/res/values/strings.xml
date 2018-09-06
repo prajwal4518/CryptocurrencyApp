@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Cryptocurrency Tracker</string>
+
+    <string-array name="supportedCryptocurrencies">
+        <item name="bitcoin">Bitcoin</item>
+        <item name="ethereum">Ethereum</item>
+        <item name="litecoin">Litecoin</item>
+    </string-array>
+
+</resources>
