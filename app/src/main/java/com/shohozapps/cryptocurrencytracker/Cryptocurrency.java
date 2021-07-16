@@ -91,6 +91,7 @@ public abstract class Cryptocurrency {
         }
 
         this.currentPrice = Double.valueOf(temp);
+
     }
 
 

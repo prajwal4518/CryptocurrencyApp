@@ -23,12 +23,14 @@
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/gradient_appbar"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
 
         <include
             android:id="@+id/toolbar"
-            layout="@layout/toolbar"    />
+            layout="@layout/toolbar"
+            android:background="@drawable/gradient_appbar" />
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tabs"

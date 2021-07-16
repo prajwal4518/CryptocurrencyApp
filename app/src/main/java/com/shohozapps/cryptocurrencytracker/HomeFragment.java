@@ -64,13 +64,13 @@ public class HomeFragment extends Fragment {
             return;
         }
 
-        oneCryptoTextView.setText("One " + selectedCrypto.getName() + " = " + selectedCrypto.getCurrentPrice());
+        oneCryptoTextView.setText("One " + selectedCrypto.getName() + " :" + selectedCrypto.getCurrentPrice());
 
-        display(selectedCrypto.getHourChange(), hourTextView, "1H: ");
-        display(selectedCrypto.getDayChange(), dayTextView, "1D: ");
-        display(selectedCrypto.getWeekChange(), sevenDayTextView, "7D: ");
-        display(selectedCrypto.getMonthChange(), monthTextView, "30D: ");
-        display(selectedCrypto.getYearChange(), yearTextView, "1Y: ");
+        display(selectedCrypto.getHourChange(), hourTextView, "1 Hour: ");
+        display(selectedCrypto.getDayChange(), dayTextView, "1 Day: ");
+        display(selectedCrypto.getWeekChange(), sevenDayTextView, "7 Day: ");
+        display(selectedCrypto.getMonthChange(), monthTextView, "30 Day: ");
+        display(selectedCrypto.getYearChange(), yearTextView, "1 Year: ");
 
         logo.setImageResource(selectedCrypto.getLogoID());
     }
@@ -78,9 +78,9 @@ public class HomeFragment extends Fragment {
     private void display(double percentage, TextView et, String interval) {
 
         if(percentage > 0)
-            et.setTextColor(getResources().getColor(R.color.stockGreen));
+            et.setTextColor(getResources().getColor(R.color.stockWhite));
         else if(percentage < 0)
-            et.setTextColor(getResources().getColor(R.color.stockRed));
+            et.setTextColor(getResources().getColor(R.color.stockBlack));
         else
             et.setTextColor(getResources().getColor(R.color.stockBlack));
 

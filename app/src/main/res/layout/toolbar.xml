@@ -4,8 +4,8 @@
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@drawable/gradient_appbar"
     android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-    android:background="@color/colorPrimary"
     app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
 
@@ -13,15 +13,17 @@
         android:id="@+id/ib_refresh"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:background="@color/colorPrimaryDark"
-        android:paddingRight="5dp"
-        android:paddingLeft="-2dp"
+
+        android:layout_marginRight="6dp"
+        android:background="@color/gray"
+        android:padding="10dp"
         app:srcCompat="@android:drawable/stat_notify_sync" />
 
     <Spinner
         android:id="@+id/s_cryptoSelection"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/spinner_background" />
+        android:background="@drawable/spinner_background"
+        android:padding="10dp" />
 
 </android.support.v7.widget.Toolbar>
